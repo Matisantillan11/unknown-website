@@ -20,7 +20,7 @@ export const TextBrand = styled.span<ITextBrand>`
   @media (min-width:380px) and (max-width: 480px) {
     font-size: ${props => props.fsize ? props.fsize : "4rem"};
     top: ${props => props.top ? props.top : "5%"};
-    right: ${props => props.right ? props.right : "5%"};
+    right: ${props => props.right ? props.right : "2.5%"};
   }
 `
 

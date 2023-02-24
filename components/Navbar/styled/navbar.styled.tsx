@@ -6,6 +6,9 @@ export const NavbarContainer = styled.div<NavbarContainerInterface>`
   height: 5vh;
   width: 100vw;
   position: relative;
+  @media (max-width: 768px) {
+    padding: 2.5% 0;
+  }
 `
 
 export const NavbarList = styled.ul<NavbarContainerInterface>`
@@ -17,6 +20,9 @@ list-style: none;
 width: 100%;
 height: 100%;
 padding: 2.5% 5%;
+@media (min-width:380px) and (max-width: 480px) {
+  justify-content: space-between;
+  }
 `
 
 export const NavbarItem = styled.li`
@@ -25,5 +31,17 @@ export const NavbarItem = styled.li`
   color: ${colors.dark};
   :first-child{
     margin-right: 75%;
+  }
+
+  @media (max-width: 768px) {
+    :first-child{
+      margin-right: 50%;
+    }
+  }
+
+  @media (min-width:380px) and (max-width: 480px) {
+    :first-child{
+      margin-right: 25%;
+    }
   }
 `

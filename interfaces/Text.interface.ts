@@ -5,4 +5,5 @@ export interface ITextBrand {
   right?: string;
   color?: string;
   border?: string;
+  translate?: string;
 }

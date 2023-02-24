@@ -3,13 +3,11 @@ import { Jost } from 'next/font/google'
 import type { AppProps } from 'next/app'
 
 const jost = Jost({
-  weight: ['400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700'],
   subsets: ['latin'], 
 })
 export default function App({ Component, pageProps }: AppProps) {
   return (
-      <main className={jost.className}>
         <Component {...pageProps} />
-      </main>
     )
 }

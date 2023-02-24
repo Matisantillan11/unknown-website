@@ -2,22 +2,46 @@ import { colors } from "@/constants/colors"
 import { NavbarController } from "@/controllers/Navbar/Navbar.controller"
 import Image from "next/image"
 import { Subtitle, TextBrand } from "../Text/text.styled"
-import { HomeBanner, HomeBannerContent, LogoBanner } from "./styled/Home.styled"
+import { HomeBanner, HomeBannerContainer, HomeBrandContainer,  HomeBannerContent, LogoBanner } from "./styled/Home.styled"
 
 export const HomeComponent = () => {
+  const windowWidth = window.innerWidth
   return (
   <>
-    <NavbarController /> 
-    <HomeBanner>
-      <HomeBannerContent/>
-      <TextBrand >UNKNOWN.</TextBrand>
-      <TextBrand style={{ rotate: '90deg'}} right="1%" fsize='9rem'top='63%'>001</TextBrand>
+    {
+    windowWidth > 768 ?
+    (
       <>
-      <LogoBanner> X/UNKNOWN</LogoBanner>
-      <Subtitle>We are coming. Be ready for an auntum/winter collection never seen before.</Subtitle>
+      <NavbarController /> 
+      <HomeBanner>
+        <HomeBannerContent/>
+        <HomeBannerContainer>
+          <>
+            <LogoBanner> X/UNKNOWN</LogoBanner>
+            <Subtitle>We are coming. Be ready for an auntum/winter collection never seen before.</Subtitle>
+          </>
+        </HomeBannerContainer>
+        <HomeBrandContainer>
+        <TextBrand>UNKNOWN.</TextBrand>
+        <TextBrand style={{ rotate: '90deg'}} right="5%" fsize='9rem'top='63%'>001</TextBrand>
+        </HomeBrandContainer>
+      </HomeBanner>
       </>
-      
-    </HomeBanner>
+    )
+    :
+    (
+      <>
+      <NavbarController /> 
+      <HomeBanner>
+        <HomeBannerContent/>
+        <HomeBrandContainer>
+        <TextBrand>UNKNOWN.</TextBrand>
+        <Subtitle>We are coming. Be ready for an auntum/winter collection never seen before.</Subtitle>
+         <TextBrand style={{ rotate: '90deg'}} right={windowWidth > 480 ? "50%" : "70%"} fsize={windowWidth > 480 ? '7rem' : '5rem' }top='63%'>001</TextBrand>
+        </HomeBrandContainer>
+      </HomeBanner>
+      </>
+    )}
   </>
   )
 }

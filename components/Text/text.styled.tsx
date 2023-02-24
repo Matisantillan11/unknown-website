@@ -14,13 +14,14 @@ export const TextBrand = styled.span<ITextBrand>`
   @media (max-width: 768px) {
     font-size: ${props => props.fsize ? props.fsize : "4rem"};
     top: ${props => props.top ? props.top : "13%"};
-  right: ${props => props.right ? props.right : "-25%"};
+    right: ${props => props.right ? props.right : "-25%"};
   }
 
   @media (min-width:380px) and (max-width: 480px) {
     font-size: ${props => props.fsize ? props.fsize : "4rem"};
     top: ${props => props.top ? props.top : "5%"};
     right: ${props => props.right ? props.right : "2.5%"};
+    transform: "none"
   }
 `
 

@@ -8,6 +8,8 @@ const jost = Jost({
 })
 export default function App({ Component, pageProps }: AppProps) {
   return (
+      <main className={jost.className}>
         <Component {...pageProps} />
+      </main>
     )
 }

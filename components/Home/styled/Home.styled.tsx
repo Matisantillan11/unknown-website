@@ -20,6 +20,12 @@ export const HomeBanner = styled.div`
     background-size: 90% 90%;
     background-position: 90px bottom;
   }
+  
+  @media (min-width:360px) and (max-width: 379px) {
+    background-size: 80% 90%;
+    background-position: 80px bottom;
+  }
+  
 `
 
 export const HomeBannerContainer = styled.div`
@@ -28,6 +34,9 @@ export const HomeBannerContainer = styled.div`
   position: relative;
   display: flex;
   justify-content: flex-end; 
+  @media (min-width:360px) and (max-width: 379px) {
+    width: 100%;
+  }
 `
 
 export const HomeBrandContainer = styled.div`

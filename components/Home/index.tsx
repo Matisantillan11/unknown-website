@@ -34,9 +34,9 @@ export const HomeComponent = () => {
       <HomeBanner>
         <HomeBannerContent/>
         <HomeBrandContainer>
-        <TextBrand>UNKNOWN.</TextBrand>
-        <Subtitle>We are coming. Be ready for an auntum/winter collection never seen before.</Subtitle>
-         <TextBrand style={{ rotate: '90deg'}} right={width > 480 ? "50%" : "70%"} fsize={width > 480 ? '7rem' : '5rem' }top='63%'>001</TextBrand>
+          <TextBrand>UNKNOWN.</TextBrand>
+          <Subtitle>We are coming. Be ready for an auntum/winter collection never seen before.</Subtitle>
+          <TextBrand style={{ rotate: '90deg'}} right={width > 480 ? "50%" : width < 380 ? "10%" : "70%"} fsize={width > 480 ? '7rem' : '5rem' }top='63%'>001</TextBrand>
         </HomeBrandContainer>
       </HomeBanner>
       </>

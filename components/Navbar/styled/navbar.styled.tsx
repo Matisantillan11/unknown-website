@@ -44,4 +44,10 @@ export const NavbarItem = styled.li`
       margin-right: 25%;
     }
   }
+
+  @media (min-width:360px) and (max-width: 379px) {
+    :first-child{
+      margin-right: 15%;
+    }
+}
 `

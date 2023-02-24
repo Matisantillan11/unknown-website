@@ -23,6 +23,13 @@ export const TextBrand = styled.span<ITextBrand>`
     right: ${props => props.right ? props.right : "2.5%"};
     transform: "none"
   }
+
+  @media (min-width:360px) and (max-width: 379px) {
+    font-size: ${props => props.fsize ? props.fsize : "3.5rem"};
+    top: ${props => props.top ? props.top : "5%"};
+    right: ${props => props.right ? props.right : "-140%"};
+    transform: "none"
+  }
 `
 
 export const Subtitle = styled.p`
@@ -50,4 +57,6 @@ export const Subtitle = styled.p`
     left: 55%;
     text-align: left;
   }
+
+  
 `

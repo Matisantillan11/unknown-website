@@ -1,4 +1,3 @@
-import React from "react"
 import styled from "styled-components"
 import { colors } from "@/constants/colors"
 import { ITextBrand } from "@/interfaces/Text.interface"
@@ -6,7 +5,8 @@ import { ITextBrand } from "@/interfaces/Text.interface"
 export const TextBrand = styled.span<ITextBrand>`
   font-size: ${props => props.fsize ? props.fsize : "5rem"};
   font-weight: ${props => props.fweight ? props.fweight : "700"};
-  color: ${colors.dark};
+  color: ${props => props.color ? props.color : colors.dark};
+  border: ${props => props.border ? props.border : "none"};
   position: absolute;
   top: ${props => props.top ? props.top : "30%"};
   right: ${props => props.right ? props.right : "5%"};

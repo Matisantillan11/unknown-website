@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import { Jost } from '@next/font/google'
+import { Jost } from 'next/font/google'
 import type { AppProps } from 'next/app'
 
 const jost = Jost({

@@ -1,7 +1,20 @@
 import React from "react"
-import { NavbarContainer } from "./styled/navbar.styled"
-export const NavbarComponent = () => (
-  <NavbarContainer>
-    <h1>Navbar</h1>
-  </NavbarContainer>
-)
+import { NavbarContainer, NavbarItem, NavbarList } from "./styled/navbar.styled"
+
+const NavbarItems = [
+  'COLLECTIONS',
+  'SHOP',
+  'NEW ARRIVALS',
+];
+
+export const NavbarComponent = () => {
+  return (
+    <NavbarContainer>
+      <NavbarList>
+        {NavbarItems?.map((item, index) => (
+          <NavbarItem key={index}>{item}</NavbarItem>
+        ))}
+      </NavbarList>
+    </NavbarContainer>
+  );
+}

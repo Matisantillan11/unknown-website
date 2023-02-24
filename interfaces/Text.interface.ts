@@ -3,4 +3,6 @@ export interface ITextBrand {
   fweight?: string;
   top?: string;
   right?: string;
+  color?: string;
+  border?: string;
 }

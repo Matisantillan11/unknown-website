@@ -33,9 +33,23 @@ export const NavbarItem = styled.li`
     margin-right: 75%;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 769px) and (max-width: 912px){
+    font-size: 1.1rem;
+    font-weight: 600;
+  
     :first-child{
       margin-right: 50%;
+    }
+  }
+
+  @media (min-width:601px) and (max-width: 768px) {
+    :first-child{
+      margin-right: 45%;
+    }
+  }
+  @media (min-width:481px) and (max-width: 600px) {
+    :first-child{
+      margin-right: 35%;
     }
   }
 

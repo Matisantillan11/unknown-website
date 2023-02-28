@@ -11,7 +11,16 @@ export const HomeBanner = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
-  @media (max-width: 768px) {
+  @media (min-width: 769px) and (max-width: 912px){
+    background-size: 60% 90%;
+    background-position: 0px bottom;
+  }
+  @media (min-width: 601px) and (max-width: 768px) {
+    background-size: 70% 90%;
+    background-position: 200px bottom;
+  }
+
+  @media (min-width: 481px) and (max-width: 600px) {
     background-size: 70% 90%;
     background-position: 200px bottom;
   }
@@ -48,6 +57,10 @@ export const HomeBrandContainer = styled.div`
   @media (min-width:380px) and (max-width: 480px) {
     width: 100%;
   }
+
+  @media (min-width:360px) and (max-width: 379px) {
+    width: 100%;
+  }
 `
 
 export const HomeBannerContent = styled.div`
@@ -79,4 +92,11 @@ export const LogoBanner = styled.p`
   top: 17%;
   left: 95%;
   transform: translate(-105%, -20%); 
+  @media (min-width: 769px) and (max-width: 912px){
+    font-size: 1.5rem;
+    width: 50%;
+    top: 24%;
+    right: 20%;
+    transform: translate(-28.5%, 30%);
+  }
 `
